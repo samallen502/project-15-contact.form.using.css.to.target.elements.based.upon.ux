@@ -1,0 +1,14 @@
+/* UI element states pseudo-classes ------------ */
+
+input:focus, /* This will make the border color of an input field or text area turn aqua green upon mouseover (focus). The colon makes this a pseudoclass. */
+textarea:focus, {
+    border-color: #52bab3;
+}
+
+input:disabled { /* Input type selector just makes this more selective. You could use ":disabled" to grey out anythng in HTML that has disabled in it, like the email text box does in html right now. */
+    background: #ddd;
+}
+
+input[type="checkbox"]:checked + label { /* This is an attribute selector with a combinator. It makes any check on the form turn the label next to the check bold. */
+    font-weight: bold;
+}
